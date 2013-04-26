@@ -23,7 +23,7 @@ add_external_project_step(install_libtiff_libraries
   # copy command
   COMMAND ${CMAKE_COMMAND} -E copy_directory
                               <BINARY_DIR>/libtiff
-                              <INSTALL_DIR>/include/libtiff
+                              <INSTALL_DIR>/include
 
   DEPENDEES build # do after build
 )
