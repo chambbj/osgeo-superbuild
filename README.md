@@ -1,0 +1,3 @@
+This is an unofficial OSGEO Superbuild (because I'm not a fan of installers and a bit distrustful of other people's binaries).
+
+More detail to come...
