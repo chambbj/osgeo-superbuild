@@ -50,6 +50,11 @@ add_revision(libxml2
   GIT_TAG v2.9.1
 )
 
+add_revision(pcl
+  GIT_REPOSITORY "https://github.com/PointCloudLibrary/pcl.git"
+  GIT_TAG pcl-1.6.0
+)
+
 add_revision(pdal
   GIT_REPOSITORY "https://github.com/PDAL/PDAL.git"
   GIT_TAG master
