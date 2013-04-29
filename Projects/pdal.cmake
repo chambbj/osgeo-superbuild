@@ -1,13 +1,13 @@
-add_external_project_step(patch_pdal_cmakelists
-  COMMAND ${CMAKE_COMMAND} -E copy_if_different
-          "${SuperBuild_PROJECTS_DIR}/patches/pdal.CMakeLists.txt"
-          "<SOURCE_DIR>/CMakeLists.txt"
-  COMMAND ${CMAKE_COMMAND} -E copy_if_different
-          "${SuperBuild_PROJECTS_DIR}/patches/pdal.src.CMakeLists.txt"
-          "<SOURCE_DIR>/src/CMakeLists.txt"
-  DEPENDEES update # do after update
-  DEPENDERS patch  # do before patch
-)
+#add_external_project_step(patch_pdal_cmakelists
+#  COMMAND ${CMAKE_COMMAND} -E copy_if_different
+#          "${SuperBuild_PROJECTS_DIR}/patches/pdal.CMakeLists.txt"
+#          "<SOURCE_DIR>/CMakeLists.txt"
+#  COMMAND ${CMAKE_COMMAND} -E copy_if_different
+#          "${SuperBuild_PROJECTS_DIR}/patches/pdal.src.CMakeLists.txt"
+#          "<SOURCE_DIR>/src/CMakeLists.txt"
+#  DEPENDEES update # do after update
+#  DEPENDERS patch  # do before patch
+#)
 
 add_external_project(pdal
   DEPENDS boost libgeotiff gdal laszip tiff flann
