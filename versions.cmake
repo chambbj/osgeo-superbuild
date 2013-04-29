@@ -17,6 +17,7 @@ add_revision(boost
 
 # download link does not match download filename
 add_revision(eigen
+  URL "P:/tilt-3rd-party-source/eigen-3.1.2.bz2"
 	#  URL "http://bitbucket.org/eigen/eigen/get/3.1.3.tar.gz"
 	#  URL_MD5 dc4247efd4f5d796041f999e8774af04
 	#  HG_REPOSITORY "https://bitbucket.org/eigen/eigen"

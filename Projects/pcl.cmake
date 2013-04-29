@@ -1,5 +1,27 @@
 add_external_project(pcl
-  DEPENDS boost flann
+  DEPENDS boost eigen flann
   CMAKE_ARGS
     -DCMAKE_INSTALL_PREFIX=<INSTALL_DIR>/pcl
+    -DBUILD_OPENNI:BOOL=OFF
+    -DBUILD_TESTS:BOOL=OFF
+    -DBUILD_all_in_one_installer:BOOL=OFF
+    -DBUILD_apps:BOOL=OFF
+    -DBUILD_common:BOOL=ON
+    -DBUILD_examples:BOOL=OFF
+    -DBUILD_features:BOOL=ON
+    -DBUILD_filters:BOOL=ON
+    -DBUILD_geometry:BOOL=ON
+    -DBUILD_global_tests:BOOL=OFF
+    -DBUILD_io:BOOL=ON
+    -DBUILD_kdtree:BOOL=ON
+    -DBUILD_keypoints:BOOL=ON
+    -DBUILD_octree:BOOL=ON
+    -DBUILD_registration:BOOL=ON
+    -DBUILD_sample_consensus:BOOL=ON
+    -DBUILD_search:BOOL=ON
+    -DBUILD_segmentation:BOOL=ON
+    -DBUILD_surface:BOOL=ON
+    -DBUILD_tools:BOOL=OFF
+    -DBUILD_tracking:BOOL=OFF
+    -DBUILD_visualization:BOOL=OFF
  )
