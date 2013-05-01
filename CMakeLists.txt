@@ -165,6 +165,7 @@ include(pdal)
 include(proj)
 include(qhull)
 include(tiff)
+include(xercesc)
 include(zlib)
 
 #if (UNIX)
