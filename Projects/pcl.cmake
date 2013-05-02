@@ -1,5 +1,5 @@
 add_external_project(pcl
-  DEPENDS boost eigen flann
+  DEPENDS boost eigen flann qhull
   CMAKE_ARGS
     -DCMAKE_INSTALL_PREFIX=<INSTALL_DIR>/pcl
     -DBUILD_OPENNI:BOOL=OFF
