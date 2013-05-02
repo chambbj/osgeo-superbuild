@@ -17,11 +17,13 @@ add_revision(boost
 
 # download link does not match download filename
 add_revision(eigen
-  URL "P:/tilt-3rd-party-source/eigen-3.1.2.bz2"
+	#  URL "P:/tilt-3rd-party-source/eigen-3.1.2.bz2"
 	#  URL "http://bitbucket.org/eigen/eigen/get/3.1.3.tar.gz"
 	#  URL_MD5 dc4247efd4f5d796041f999e8774af04
 	#  HG_REPOSITORY "https://bitbucket.org/eigen/eigen"
 	#  HG_TAG 3.1.3
+  GIT_REPOSITORY "https://bitbucket.org/chambbj/eigen-fork.git"
+  GIT_TAG master
 )
 
 add_revision(flann
@@ -53,7 +55,7 @@ add_revision(libxml2
 
 add_revision(pcl
   GIT_REPOSITORY "https://github.com/PointCloudLibrary/pcl.git"
-  GIT_TAG pcl-1.6.0
+  GIT_TAG master
 )
 
 add_revision(pdal
@@ -75,6 +77,11 @@ add_revision(qhull
 add_revision(tiff
   URL "http://download.osgeo.org/libtiff/tiff-4.0.3.tar.gz"
   URL_MD5 051c1068e6a0627f461948c365290410
+)
+
+add_revision(xercesc
+  URL "http://mirrors.gigenet.com/apache//xerces/c/3/sources/xerces-c-3.1.1.tar.gz"
+  URL_MD5 6a8ec45d83c8cfb1584c5a5345cb51ae
 )
 
 # NOTE: if updating zlib version, fix patch in zlib.cmake
