@@ -48,6 +48,11 @@ add_revision(libgeotiff
   URL_MD5 efa7b418bc00228fcda4da63557e40c2
 )
 
+add_revision(liblas
+  GIT_REPOSITORY "https://github.com/libLAS/libLAS.git"
+  GIT_TAG 1.7.0
+)
+
 add_revision(libxml2
   GIT_REPOSITORY "git://git.gnome.org/libxml2"
   GIT_TAG v2.9.1
@@ -86,6 +91,6 @@ add_revision(xercesc
 
 # NOTE: if updating zlib version, fix patch in zlib.cmake
 add_revision(zlib
-  URL "http://zlib.net/zlib-1.2.7.tar.gz"
-  URL_MD5 60df6a37c56e7c1366cca812414f7b85
+  URL "http://zlib.net/zlib-1.2.8.tar.gz"
+  URL_MD5 44d667c142d7cda120332623eab69f40
 )
