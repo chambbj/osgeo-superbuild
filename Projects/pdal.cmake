@@ -10,7 +10,7 @@
 #)
 
 add_external_project(pdal
-  DEPENDS boost libgeotiff gdal laszip tiff flann
+  DEPENDS boost libgeotiff gdal laszip tiff # flann
 
   CMAKE_ARGS
     -DBoost_NO_BOOST_CMAKE:BOOL=ON
@@ -22,13 +22,13 @@ add_external_project(pdal
     -DBOOST_INCLUDEDIR:PATH=${SuperBuild_BINARY_DIR}/install/include/boost-1_53
     -DBOOST_LIBRARYDIR:PATH=${SuperBuild_BINARY_DIR}/install/lib
     -DPDAL_EMBED_BOOST:BOOL=OFF
-    -DWITH_FLANN:BOOL=ON
+    -DWITH_FLANN:BOOL=OFF
     -DWITH_GDAL:BOOL=ON
     -DWITH_GEOTIFF:BOOL=ON
     -DWITH_LASZIP:BOOL=ON
     -DWITH_APPS:BOOL=OFF
-    -DFLANN_INCLUDE_DIR:PATH=${SuperBuild_BINARY_DIR}/install/include
-    -DFLANN_LIBRARY:FILEPATH=${SuperBuild_BINARY_DIR}/install/lib/flann_cpp_s.lib
+#    -DFLANN_INCLUDE_DIR:PATH=${SuperBuild_BINARY_DIR}/install/include
+#    -DFLANN_LIBRARY:FILEPATH=${SuperBuild_BINARY_DIR}/install/lib/flann_cpp_s.lib
     -DGDAL_INCLUDE_DIR:PATH=${SuperBuild_BINARY_DIR}/install/include
     -DGDAL_LIBRARY:FILEPATH=${SuperBuild_BINARY_DIR}/install/lib/gdal_i.lib
     -DGEOTIFF_INCLUDE_DIR:PATH=${SuperBuild_BINARY_DIR}/install/include
