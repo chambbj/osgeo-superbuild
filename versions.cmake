@@ -54,7 +54,7 @@ add_revision(liblas
 )
 
 add_revision(libxml2
-  GIT_REPOSITORY "git://git.gnome.org/libxml2"
+  GIT_REPOSITORY "https://git.gnome.org/browse/libxml2"
   GIT_TAG v2.9.1
 )
 
