@@ -11,9 +11,9 @@ add_external_project(boost
                                 --with-iostreams
                                 --with-program_options
                                 --with-thread
-                                #--with-random
-                                #--with-serialization
-                                #--with-test
+                                --with-random
+                                --with-serialization
+                                --with-test
                                 address-model=64
                                 --build-type=complete
                                 install
