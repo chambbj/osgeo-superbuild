@@ -2,6 +2,9 @@ add_external_project_step(copy_eigen_headers
   COMMAND ${CMAKE_COMMAND} -E copy_directory
           <SOURCE_DIR>/Eigen
           <INSTALL_DIR>/include/Eigen
+  COMMAND ${CMAKE_COMMAND} -E copy_directory
+          <SOURCE_DIR>/unsupported
+          <INSTALL_DIR>/include/unsupported
   DEPENDEES patch # do after patch
 )
 
