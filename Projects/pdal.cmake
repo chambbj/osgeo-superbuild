@@ -43,3 +43,12 @@ add_external_project(pdal
     -DLIBXML2_LIBRARY:FILEPATH=${SuperBuild_BINARY_DIR}/install/lib/libxml2.lib
     -DCMAKE_INSTALL_PREFIX=<INSTALL_DIR>/pdal
 )
+
+message( STATUS "${CMAKE_BUILD_TYPE}" )
+
+add_external_project_step(rename_pdal_lib
+  COMMAND ${CMAKE_COMMAND} -E rename
+          "${SuperBuild_BINARY_DIR}/install/lib/pdal.lib"
+          "${SuperBuild_BINARY_DIR}/install/lib/pdal-vc100.lib"
+  DEPENDEES install # do after install
+)

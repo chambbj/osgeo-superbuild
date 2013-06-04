@@ -1,10 +1,10 @@
-add_external_project_step(patch_gdal_nmake_opt
-  COMMAND ${CMAKE_COMMAND} -E copy_if_different
-          "${SuperBuild_PROJECTS_DIR}/patches/gdal.nmake.opt"
-          "<SOURCE_DIR>/nmake.opt"
-DEPENDEES update # do after update
-DEPENDERS patch  # do before patch
-)
+#add_external_project_step(patch_gdal_nmake_opt
+#  COMMAND ${CMAKE_COMMAND} -E copy_if_different
+#          "${SuperBuild_PROJECTS_DIR}/patches/gdal.nmake.opt"
+#          "<SOURCE_DIR>/nmake.opt"
+#DEPENDEES update # do after update
+#DEPENDERS patch  # do before patch
+#)
 
 add_external_project_or_use_system(gdal
 #  DEPENDS libgeotiff tiff
