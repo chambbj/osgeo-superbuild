@@ -22,6 +22,7 @@ add_external_project(pdal
     -DBOOST_INCLUDEDIR:PATH=${SuperBuild_BINARY_DIR}/install/include/boost-1_53
     -DBOOST_LIBRARYDIR:PATH=${SuperBuild_BINARY_DIR}/install/lib
     -DPDAL_EMBED_BOOST:BOOL=OFF
+    -DPDAL_USE_STATIC_RUNTIME:BOOL=OFF
     -DWITH_FLANN:BOOL=OFF
     -DWITH_GDAL:BOOL=ON
     -DWITH_GEOTIFF:BOOL=ON

@@ -65,7 +65,7 @@ add_revision(pcl
 
 add_revision(pdal
   GIT_REPOSITORY "https://github.com/chambbj/PDAL.git"
-  GIT_TAG development
+  GIT_TAG master
 )
 
 # NOTE: if updating proj version, fix patch in proj.cmake
